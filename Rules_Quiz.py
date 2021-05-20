@@ -1,7 +1,7 @@
 #This version will give user muiltple choice to choose if they want rules or no
-print("===========================================================================================================================")
+print("======================================================================================================================================================================")
 print("Welcome to NBA Quiz program. Program will be a multichoice quiz giving you option answers to choose from. Please follow the instructions and enjoy playing the quiz.")
-print("===========================================================================================================================")
+print("======================================================================================================================================================================")
 
 def instructions():
     inst=input("Hey would like to read the instruction Enter Yes or NO : ").lower()
