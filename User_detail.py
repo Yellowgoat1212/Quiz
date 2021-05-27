@@ -20,9 +20,8 @@ while True:
     age = input ("Enter your age : ")
     if age.isnumeric():
         break
-    print("Please enter numbers 5-80 only")
+    print("Please enter integer/numbers only")
 
 
 user_details(name)
 print("nice your",age,"awsome lets get right to the quiz.")
-
