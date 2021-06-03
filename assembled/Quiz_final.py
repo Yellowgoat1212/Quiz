@@ -1,7 +1,7 @@
 print("*************************")#Welcome the user once they're ready to take the quiz
 print("Welcome to Natan's Quiz")
 print("*************************")
-from random import shuffle
+from random import shuffle#import random is so the end users can get random question.
 #Ask for name
 while True:
     name = input ("Enter your name : ")
@@ -22,7 +22,7 @@ print(age)
 #This code is if the end user need instrucation 
 inst=input("Hey would like to read the instruction Enter Yes or any other ket to continue without the rules : ").lower()
 
-if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':
+if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':#options of inputs for instructions to be printed
     print("===========================================================================================================")
     print("* Once you enter the quiz you'll have multiple choice to choose from A,B,C and D")
     print("* This Quiz is based on National Basketball Asscositon")
@@ -119,14 +119,14 @@ while len(nbaquiz)>0 and number>0:
                 print("=====================")
                 score += 1
                 print("*********************************")
-                print("    Your score is",score         )
+                print("    Your score is",score         )#show the the users their scores once they get an answer right.
                 print("*********************************")
             else:
                 print("============================= ")
-                print("Oops your answer is wrong     ")#correcting the users by show them the answer and show the score didn't increase
+                print("Oops your answer is wrong     ")
                 print("       The answer is",answer  )
                 print("*******************************")
-                print("  You score is",score           )
+                print("  You score is",score           )#correcting the users by show them the answer and show the score didn't increase
                 print("============================= ")
             del nbaquiz[0]
             number-=1
