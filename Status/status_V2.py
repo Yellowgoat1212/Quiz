@@ -1,4 +1,4 @@
-#asking users if they're ready for the quizr
+#asking users if they're ready for the quiz
 def status():
     status = input("Are you ready to take the quiz :{}?:  \na. Yes \nb. No \n=>")
 
