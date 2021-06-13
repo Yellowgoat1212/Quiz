@@ -1,7 +1,7 @@
 print("*************************")#Welcome the user once they're ready to take the quiz
 print("Welcome to Natan's Quiz")
 print("*************************")
-from random import shuffle#import random is so the end users can get random question.
+from random import shuffle#importing random for question
 #Ask for name
 while True:
     name = input ("Enter your name : ")
@@ -10,7 +10,7 @@ while True:
     print("Please enter character A-Z only")
 print(name)
 
-#Ask for age
+#Ask for age using while True 
 
 while True:
     age = input ("Enter your age : ")
@@ -22,7 +22,7 @@ print(age)
 #This code is if the end user need instrucation 
 inst=input("Hey would like to read the instruction Enter Yes or any other ket to continue without the rules : ").lower()
 
-if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':#options of inputs for instructions to be printed
+if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':
     print("===========================================================================================================")
     print("* Once you enter the quiz you'll have multiple choice to choose from A,B,C and D")
     print("* This Quiz is based on National Basketball Asscositon")
@@ -37,7 +37,7 @@ else:
 status = input("Are you ready to take the quiz :{}?:  \na. Yes \nb. No \n=>".format(name))
 
 
-# what if the user is ready?
+# option of answer the end users may input
 if status == 'Yes' or status == 'yes' or status == 'yeah' or status == 'y' or status == 'ye' or status == 'A' or status == 'a':
     print("                         =================================================================            ")
     print("                         ------------Welcome to NBA Quiz program-------------------            ")
@@ -52,7 +52,7 @@ else:
 index = 0
 score = 0
 optnum = 0
-#Question to ask for end users
+#generating questions
 nbaquiz = [
         ["Who was the Founder of the Nation Basketball Association?",
           {'answer':'c','option':'a)Steven A.Smith\nb)Adam Silver\nc)Walt Brown\nd)Lavar Ball'}],
@@ -119,14 +119,14 @@ while len(nbaquiz)>0 and number>0:
                 print("=====================")
                 score += 1
                 print("*********************************")
-                print("    Your score is",score         )#show the the users their scores once they get an answer right.
+                print("    Your score is",score         )
                 print("*********************************")
             else:
                 print("============================= ")
-                print("Oops your answer is wrong     ")
+                print("Oops your answer is wrong     ")#correcting the users by show them the answer and show the score didn't increase
                 print("       The answer is",answer  )
                 print("*******************************")
-                print("  You score is",score           )#correcting the users by show them the answer and show the score didn't increase
+                print("  You score is",score           )
                 print("============================= ")
             del nbaquiz[0]
             number-=1
@@ -140,6 +140,6 @@ while len(nbaquiz)>0 and number>0:
                                 
 print("You've scored",score,"out of",total,"questions")#showing the result after the quiz end.
 print("your score in percentage",round(score/10*100,2),"%")
-print("If there is anything that has affected you in anyway email me 19322@students.mrgs.school.nz")
+print("If there is anything that has affected you in anyway email me 19322@students.mrgs.school.nz")#Disclaimer if i have done any harm to someone favourite sport 
 print("You have ended the quiz succesfully, Congrats.")
 exit()
