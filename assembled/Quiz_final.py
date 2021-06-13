@@ -17,10 +17,10 @@ while True:
     if age.replace(' ','').isnumeric():
         break
     print("Please enter integer only")
-print(age)
+print("Your age is",age,"Noice")
 
 #This code is if the end user need instrucation 
-inst=input("Hey would like to read the instruction Enter Yes or any other ket to continue without the rules : ").lower()
+inst=input("Hey would like to read the instruction Enter Yes or any other key to continue without the rules : ").lower()
 
 if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':
     print("===========================================================================================================")
@@ -115,7 +115,7 @@ while len(nbaquiz)>0 and number>0:
         if useranswer == 'a' or useranswer == 'b' or useranswer == 'c' or useranswer == 'd':#this is user answer where there wide range of option to pick 
             if useranswer == answer:
                 print("=====================")
-                print("Corret!")
+                print("Correct!")
                 print("=====================")
                 score += 1
                 print("*********************************")
