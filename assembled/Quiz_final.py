@@ -39,9 +39,9 @@ status = input("Are you ready to take the quiz :{}?:  \na. Yes \nb. No \n=>".for
 
 # option of answer the end users may input
 if status == 'Yes' or status == 'yes' or status == 'yeah' or status == 'y' or status == 'ye' or status == 'A' or status == 'a':
-    print("                         =================================================================            ")
-    print("                         ------------Welcome to NBA Quiz program-------------------            ")
-    print("                         =================================================================            ")
+    print("=================================================================")
+    print("------------Welcome to NBA Quiz program-------------------")
+    print("================================================================")
 
 # what if the the user is not ready
 else:
