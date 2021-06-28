@@ -1,14 +1,16 @@
-print("*************************")#Welcome the user once they're ready to take the quiz
-print("Welcome to Natan's Quiz")
-print("*************************")
-from random import shuffle#importing random for question
+print("==========================================================")#Welcome the user once they're ready to take the quiz
+print("------------Welcome to NBA Quiz program-------------------")
+print("-------------This quiz is made by Natan Tsegay------------")
+print("==========================================================")
+
+from random import shuffle#imports random for question
 #Ask for name
 while True:
-    name = input ("Enter your name : ")
+    name = input ("Enter your name please : ")
     if name.replace(' ','').isalpha():
         break
     print("Please enter character A-Z only")
-print(name)
+print("Hello",name)
 
 #Ask for age using while True 
 
@@ -20,7 +22,7 @@ while True:
 print("Your age is",age,"Noice")
 
 #This code is if the end user need instrucation 
-inst=input("Hey would like to read the instruction Enter Yes or any other key to continue without the rules : ").lower()
+inst=input("\nHey would like to read the instruction Enter Yes or any other key to continue without the rules : ").lower()
 
 if inst ==  'Y' or inst  ==  'y' or  inst == 'Yes' or inst == 'yes' or inst == 'ye':
     print("===========================================================================================================")
@@ -34,14 +36,12 @@ else:
     print("Let's start")
 
 #Ask if they are ready to take the quiz
-status = input("Are you ready to take the quiz :{}?:  \na. Yes \nb. No \n=>".format(name))
+status = input("\nAre you ready to take the quiz :{}?:  \na. Yes \nb. No \n=>".format(name))
 
 
 # option of answer the end users may input
 if status == 'Yes' or status == 'yes' or status == 'yeah' or status == 'y' or status == 'ye' or status == 'A' or status == 'a':
-    print("=================================================================")
-    print("------------Welcome to NBA Quiz program-------------------")
-    print("================================================================")
+    print(" You  may continue ")
 
 # what if the the user is not ready
 else:
@@ -54,13 +54,13 @@ score = 0
 optnum = 0
 #generating questions
 nbaquiz = [
-        ["Who was the Founder of the Nation Basketball Association?",
+        ["\nWho was the Founder of the Nation Basketball Association?",
           {'answer':'c','option':'a)Steven A.Smith\nb)Adam Silver\nc)Walt Brown\nd)Lavar Ball'}],
 
-        ["Where was the first NBA game conducted?",
+        ["\nWhere was the first NBA game conducted?",
          {'answer':'a','option':'a)Toronto\nb)Washington\nc)Boston\nd)kentucky'}],
 
-        ["What player was named the G.O.A.T(Greatest of all time) that played for the Chicago Bulls in 1995?",
+        ["\nWhat player was named the G.O.A.T(Greatest of all time) that played for the Chicago Bulls in 1995?",
          {'answer':'b','option':'a)Dennis Rodman\nb)Micheal Jordan\nc)Luol Deng\nd)Derrick Rose'}],
 
         ["What player is leading the NBA ALL-Time scoring?",
@@ -88,14 +88,14 @@ shuffle(nbaquiz)#shuffle is so that the codes can appear questions randomly
 
 while True:
     try:
-        number=int(input('How many questions you want? :'))#Asking users how many question they need. 
+        number=int(input('\nHow many questions you want? :'))#Asking users how many question they need. 
         if number>len(nbaquiz) or number<=0:
             print('range 0-'+len(nbaquiz))
         else:
             total=number
             break
     except:
-        print("Place enter number from 1-10 since theres only 10 question.")#if users enter any number above 10 the program correct the users
+        print("\nPlace enter number from 1-10 since theres only 10 question.")#if users enter any number above 10 the program correct the users
 
 
 
@@ -138,8 +138,11 @@ while len(nbaquiz)>0 and number>0:
 
 
                                 
-print("You've scored",score,"out of",total,"questions")#showing the result after the quiz end.
+print("\nYou've scored",score,"out of",total,"questions")#showing the result after the quiz end.
 print("your score in percentage",round(score/10*100,2),"%")
-print("If there is anything that has affected you in anyway email me 19322@students.mrgs.school.nz")#Disclaimer if i have done any harm to someone favourite sport 
+print("You have ended the quiz succesfully, Congrats.")
+print("********************************************************************************************")
+print("\nIf there is anything that has affected you in anyway email me 19322@students.mrgs.school.nz")#Disclaimer if i have done any harm to someone favourite sport
+print("********************************************************************************************")
 print("You have ended the quiz succesfully, Congrats.")
 exit()
