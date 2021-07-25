@@ -1,4 +1,9 @@
 from random import shuffle#imports random for question
+#varibles
+index = 0
+score = 0
+optnum = 0
+
 #Ask for name
 def greet():
     global name
@@ -63,9 +68,7 @@ def rounds():#Ask for rounds,how many rounds the end users may like.
 
     
 
-index = 0
-score = 0
-optnum = 0
+
 
 print("==========================================================")#Welcome the user once they're ready to take the quiz
 print("------------Welcome to NBA Quiz program-------------------")
