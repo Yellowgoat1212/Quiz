@@ -74,7 +74,7 @@ print("==========================================================")#Welcome the 
 print("------------Welcome to NBA Quiz program-------------------")
 print("-------------This quiz is made by Natan Tsegay------------")
 print("==========================================================")
-greet()
+greet()#calling the function
 age()
 ins()
 status()
